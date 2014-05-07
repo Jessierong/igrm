@@ -7,12 +7,6 @@ h1, h2, h3, h4, h5 { font-family: Arial, "微软雅黑" }
 /*************
     common
 **************/
-/*color*/
-.normal { color: #09f }
-.success { color: #30AD00 }
-.warning { color: #f60 }
-.error { color: #C00 }
-.tip { color: #999 }
 /* PC ----------- */
 @media only screen and (min-width : 480px) {
 .normal, .success, .warning, .error, .tip {margin-left:.2em}	
@@ -110,7 +104,7 @@ h1, h2, h3, h4, h5 { font-family: Arial, "微软雅黑" }
 @media only screen and (min-width : 480px) {
 .formdetail label { margin-right: .4em; display: inline-block; width: 10em }
 .table .formdetail label {  width:8em}
-.formdetail input, .formdetail select, .formdetail textarea { vertical-align: middle; }
+.formdetail input, .formdetail select, .formdetail textarea { vertical-align: middle; max-width:100% }
 .checkgroup { margin-bottom: .4em }
 .checkgroup li { float: left; margin-right: .4em; min-width: 40% }
 }
@@ -151,15 +145,6 @@ h1, h2, h3, h4, h5 { font-family: Arial, "微软雅黑" }
 /*h1 title*/
 .sectiontitle { text-align: center; font-size: 1.2em; color: #fff; text-shadow: 1px 1px 0 rgba(0,0,0,.2); background: #ccc; }
 .sectiontitle span { display: block; /* margin-right: 2.4em .6+.6+1.2*/ }
-.sectiontitle span.titleLong, .sectiontitle span.titleShort { display: none }
-/* PC ----------- */
-@media only screen and (min-width : 480px) {
-.sectiontitle span.titleLong { display: block }
-}
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-width : 480px) {
-.sectiontitle span.titleShort { display: block }
-}
 .sectiontitle .icon-mask {font-size:1.2em; color:#fff;line-height: 2;padding: 0 .6em; }
 /*h2 title as tab*/
 .tabbox .tab:last-child { border-right: none; }
@@ -190,7 +175,7 @@ header{ position:relative; z-index:10}
 /*#allPart{ -o-transition: all 1s ease-in-out; -webkit-transition: all 1s ease-in-out; -moz-transition: all 1s ease-in-out; -ms-transition: all 1s ease-in-out; transition: all 1s ease-in-out;}*/
 .logo { margin:0 auto; text-align:center;}
 .logo img{ max-width:100%}
-.menu { background: #222; font-size: 0.6em; }
+.menu { background: #222; font-size:.6em; }
 .menu li { display: block; border-bottom: 2px solid transparent; text-align: center; color: #999; text-shadow: 1px 1px 0 #000;}
 .menu li a { color: #999; display: block; padding: 1em .6em .6em;  }
 .menu li { -moz-box-flex: 1; -webkit-box-flex: 1; box-flex: 1; }
