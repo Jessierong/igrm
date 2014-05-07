@@ -25,7 +25,7 @@
 	<h1 class="flexbox sectiontitle">
 		<a class="icon-mask icon-th-menu" href="javascript:slideTogglePage()"></a>
 		<span class="flex1 padding10 textoverflow">iGRM for THE ETON HOTEL SHANGHAI</span>
-		<a class="icon-mask icon-chat" href="javascript:slideToggleLanguage()"></a>
+		<a class="icon-mask icon-earth" href="javascript:slideToggleLanguage()"></a>
 	</h1>
 	<section class="page">
 	<!-- TemplateBeginEditable name="menu" -->
