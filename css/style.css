@@ -159,14 +159,19 @@ h1, h2, h3, h4, h5 { font-family: Arial, "微软雅黑" }
 /*************
     unique
 **************/
-.wrapper { background: #fff; position: relative }
+.wrapper, .wrapper-login{ background: #fff; position: relative; margin: 0 auto;  }
 /* PC ----------- */
 @media only screen and (min-width : 480px) {
-.wrapper, .headfixed { margin: 0 auto; max-width: 90%; min-width: 650px; }
+.wrapper, .headfixed {max-width: 90%; min-width: 650px; }
+.wrapper-login{margin: 0 auto; width:320px;}
 }
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-width : 480px) {
-}
+/*login box*/
+.loginbox.formdetail label { display: block; margin-bottom: .2em }
+.loginbox.formdetail input { width: 100%; }
+.language-login .icon-nomask { width: 2.6em; height: 2.6em; margin: 0 auto .6em } 
+.language-login .menu { background:none; }
+.language-login .menu li{ background:none; text-shadow:none; padding-bottom:.4em}
+.language-login .menu li.selected{ background:none; color:#333}
 footer p { padding: .4em; background: #eee; text-align: center; font-size: .6em; color: #888 }
 footer b{color:#444}
 /*header*/
@@ -206,7 +211,8 @@ header{ position:relative; z-index:10}
 .page { position: absolute; width: 100%; }
 .page li { text-align: left; border-bottom: 1px solid #666; padding: 0 }
 .page li a { padding: 1em; }
-.language .menu { display: -moz-box; display: -webkit-box; display: box }
+.language .menu, .language-login .menu { display: -moz-box; display: -webkit-box; display: box }
 .td-description { display: none }
 .searchbox .btnbox { margin-top: .4em }
 }
+

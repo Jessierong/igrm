@@ -84,9 +84,9 @@ function PageMenu() {
 }
 //menu language
 function LanguageMenu() {
-    $(".language li").click(function() {
-        $(".language li").removeClass("selected").addClass("gray");
-        $(this).addClass("selected").removeClass("gray");
+    $(".language li, .language-login li").click(function() {
+       $(this).parent().find("li").removeClass("selected").addClass("gray");
+		$(this).addClass("selected").removeClass("gray");
     })
 }
 
