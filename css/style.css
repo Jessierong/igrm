@@ -3,23 +3,25 @@
 /* 2014-05-06 */
 html, body { font-family: Arial, "微软雅黑"; font-size: 1em; background: #dedede; }
 h1, h2, h3, h4, h5 { font-family: Arial, "微软雅黑" }
-* { box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ -webkit-tap-highlight-color: rgba(0,0,0,0); /*-webkit-user-select: none;*/ }
+* {         box-sizing: border-box; 
+	   -moz-box-sizing: border-box; /* Firefox */ 
+	-webkit-box-sizing: border-box; /* Safari */ 
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	/*-webkit-user-select: none;*/ }
 /*************
     common
 **************/
-/* PC ----------- */
-@media only screen and (min-width : 480px) {
-.normal, .success, .warning, .error, .tip {margin-left:.2em}	
+@media only screen and (min-width : 480px) {/* PC  */
+.normal, .success, .warning, .error, .tip { margin-left: .2em }
 }
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-width : 480px) {
-.normal, .success, .warning, .error, .tip { display:block; margin-top:.2em}	
+ @media only screen and (max-width : 480px) {/* Smartphones */
+.normal, .success, .warning, .error, .tip { display: block; margin-top: .2em }
 }
 /*effect*/
 .blur { -webkit-filter: blur(1.5px); -moz-filter: blur(1.5px); -o-filter: blur(1.5px); -ms-filter: blur(1.5px); filter: blur(1.5px); }
 .gray { -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%); }
 /*popwin*/
-.shadow, .shadow-mobile { display:none; background: rgba(0,0,0,.3); position:fixed; top: 0; bottom:0; right:0; left:0; z-index:2; }
+.shadow, .shadow-mobile { display: none; background: rgba(0,0,0,.3); position: fixed; top: 0; bottom: 0; right: 0; left: 0; z-index: 2; }
 .popwin { max-width: 60%; text-align: center; }
 .popwin .sectiontitle { padding: .3em; }
 .popwin .box { background: #fff; min-width: 20em }
@@ -48,7 +50,7 @@ h1, h2, h3, h4, h5 { font-family: Arial, "微软雅黑" }
 .valign { -moz-box-align: center; -webkit-box-align: center;/* W3C */ box-align: center; }
 .halign { -moz-box-pack: center; -webkit-box-pack: center; box-pack: center; }
 /*flex*/
-.flexbox { display: -moz-box; display: -webkit-box; display: box; }
+.flexbox { display: -moz-box; display: -webkit-box; display: box; width:100% }
 .flexboxvertical { -moz-box-orient: vertical; -webkit-box-orient: vertical; box-orient: vertical; }
 .flex1 { -moz-box-flex: 1; -webkit-box-flex: 1; box-flex: 1; }
 .flex2 { -moz-box-flex: 2; -webkit-box-flex: 2; box-flex: 2; }
@@ -91,8 +93,8 @@ h1, h2, h3, h4, h5 { font-family: Arial, "微软雅黑" }
 .table tr:last-child td:last-child { -moz-border-radius: 0 0 .4em 0; -webkit-border-radius: 0 0 .4em 0; border-radius: 0 0 .4em 0; }
 .table tr:nth-child(2) th { border-top: 1px solid #ccc; }
 .table.nowrap th, .table.nowrap td { white-space: nowrap; }
-.nowrap{ white-space: nowrap; }
-.table .pic { width: 6em; height:6em; display: block; margin-bottom: .4em }
+.nowrap { white-space: nowrap; }
+.table .pic { width: 6em; height: 6em; display: block; margin-bottom: .4em }
 /*icheck*/
 .icheckbox_flat-orange, .iradio_flat-orange { display: inline-block; vertical-align: text-bottom; margin-right: .2em }
 /*form style*/
@@ -103,12 +105,12 @@ h1, h2, h3, h4, h5 { font-family: Arial, "微软雅黑" }
 /* PC ----------- */
 @media only screen and (min-width : 480px) {
 .formdetail label { margin-right: .4em; display: inline-block; width: 10em }
-.table .formdetail label {  width:8em}
-.formdetail input, .formdetail select, .formdetail textarea { vertical-align: middle; max-width:100% }
+.table .formdetail label { width: 8em }
+.formdetail input, .formdetail select, .formdetail textarea { vertical-align: middle; max-width: 100% }
 .checkgroup { margin-bottom: .4em }
 .checkgroup li { float: left; margin-right: .4em; min-width: 40% }
 }
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones */
 @media only screen and (max-width : 480px) {
 .formdetail label { display: block; margin-bottom: .2em }
 .formdetail input, .formdetail select, .formdetail textarea { width: 100%; }
@@ -119,7 +121,7 @@ h1, h2, h3, h4, h5 { font-family: Arial, "微软雅黑" }
 }
 .formdetail .textbox:last-child { margin-right: 0 }
 /****icon****/
-.icon-mask {display: block;}
+.icon-mask { display: block; }
 /*icon pic*/
 /****icon nomask****/
 .icon-nomask { display: block; background-position: center center; background-repeat: no-repeat; background-size: 100% 100%; vertical-align: text-bottom }
@@ -130,22 +132,22 @@ h1, h2, h3, h4, h5 { font-family: Arial, "微软雅黑" }
 .icon-jp { background-image: url(../images/jp.png) }
 .icon-kr { background-image: url(../images/kr.png) }
 /****button****/
-.button {color: #fff; line-height: 1.94em; padding: 0 .6em; text-align: center; margin: 0 auto; vertical-align: bottom; display: inline-block ; white-space: nowrap; }
-.button .icon-mask {font-size:1.2em; vertical-align:text-top; display: inline-block; margin-right:.4em; color:#fff }
-.buttonDisable {  background: #CECECE; text-shadow: 1px 1px 0 #9B9B9B; border-bottom: .2em solid #A5A5A5;}
-.buttonActive {/*theme color*/ background: #6B6B6B;text-shadow: 1px 1px 0 #050505;border-bottom: .2em solid #2C2C2C;}
+.button { color: #fff; line-height: 1.94em; padding: 0 .6em; text-align: center; margin: 0 auto; vertical-align: bottom; display: inline-block; white-space: nowrap; }
+.button .icon-mask { font-size: 1.2em; vertical-align: text-top; display: inline-block; margin-right: .4em; color: #fff }
+.buttonDisable { background: #CECECE; text-shadow: 1px 1px 0 #9B9B9B; border-bottom: .2em solid #A5A5A5; }
+.buttonActive {/*theme color*/ background: #6B6B6B; text-shadow: 1px 1px 0 #050505; border-bottom: .2em solid #2C2C2C; }
 .buttonActive.active, .buttonActive:active { border-bottom: none; margin-top: .2em; }
 @media only screen and (min-width : 480px) {
 .btnbox { text-align: right }
 }
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones */
 @media only screen and (max-width : 480px) {
 .btnbox { text-align: center }
 }
 /*h1 title*/
 .sectiontitle { text-align: center; font-size: 1.2em; color: #fff; text-shadow: 1px 1px 0 rgba(0,0,0,.2); background: #ccc; }
 .sectiontitle span { display: block; /* margin-right: 2.4em .6+.6+1.2*/ }
-.sectiontitle .icon-mask {font-size:1.2em; color:#fff;line-height: 2;padding: 0 .6em; }
+.sectiontitle .icon-mask { font-size: 1.2em; color: #fff; line-height: 2; padding: 0 .6em; }
 /*h2 title as tab*/
 .tabbox .tab:last-child { border-right: none; }
 .tab { color: #999; border-right: 1px solid #ccc; text-align: center; background: #eee; }
@@ -159,53 +161,53 @@ h1, h2, h3, h4, h5 { font-family: Arial, "微软雅黑" }
 /*************
     unique
 **************/
-.wrapper, .wrapper-login{ background: #fff; position: relative; margin: 0 auto;  }
+.wrapper, .wrapper-login { background: #fff; position: relative; margin: 0 auto; }
 /* PC ----------- */
 @media only screen and (min-width : 480px) {
-.wrapper, .headfixed {max-width: 90%; min-width: 650px; }
-.wrapper-login{margin: 0 auto; width:320px;}
+.wrapper, .headfixed { max-width: 90%; min-width: 650px; }
+.wrapper-login { margin: 0 auto; width: 320px; }
 }
 /*login box*/
 .loginbox.formdetail label { display: block; margin-bottom: .2em }
 .loginbox.formdetail input { width: 100%; }
-.language-login .icon-nomask { width: 2.6em; height: 2.6em; margin: 0 auto .6em } 
-.language-login .menu { background:none; }
-.language-login .menu li{ background:none; text-shadow:none; padding-bottom:.4em}
-.language-login .menu li.selected{ background:none; color:#333}
+.language-login .icon-nomask { width: 2.6em; height: 2.6em; margin: 0 auto .6em }
+.language-login .menu { background: none; }
+.language-login .menu li { background: none; text-shadow: none; padding-bottom: .4em }
+.language-login .menu li.selected { background: none; color: #333 }
 footer p { padding: .4em; background: #eee; text-align: center; font-size: .6em; color: #888 }
-footer b{color:#444}
+footer b { color: #444 }
 /*header*/
-header{ position:relative; z-index:10}
-.headfixed { position: fixed; top:0; z-index: 20; width: 100%; }
+header { position: relative; z-index: 10 }
+.headfixed { position: fixed; top: 0; z-index: 20; width: 100%; }
 /*#allPart{ -o-transition: all 1s ease-in-out; -webkit-transition: all 1s ease-in-out; -moz-transition: all 1s ease-in-out; -ms-transition: all 1s ease-in-out; transition: all 1s ease-in-out;}*/
-.logo { margin:0 auto; text-align:center;}
-.logo img{ max-width:100%}
-.menu { background: #222; font-size:.6em; }
-.menu li { display: block; border-bottom: 2px solid transparent; text-align: center; color: #999; text-shadow: 1px 1px 0 #000;}
-.menu li a { color: #999; display: block; padding: 1em .6em .6em;  }
+.logo { margin: 0 auto; text-align: center; }
+.logo img { max-width: 100% }
+.menu { background: #222; font-size: .6em; width:100% }
+.menu li { display: block; border-bottom: 2px solid transparent; text-align: center; color: #999; text-shadow: 1px 1px 0 #000; }
+.menu li a { color: #999; display: block; padding: 1em .6em .6em; }
 .menu li { -moz-box-flex: 1; -webkit-box-flex: 1; box-flex: 1; }
 .menu li.selected { color: #fff; background: #000; border-bottom-color: #ccc; }
 .menu li.selected a, .menu li:hover a { color: #fff; }
-.menu .icon-mask {font-size:1.86em; color: #999; margin: 0 auto .4em }
+.menu .icon-mask { font-size: 1.86em; color: #999; margin: 0 auto .4em }
 .menu .selected .icon-mask, .menu li:hover .icon-mask { color: #fff; }
 .language { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 10 }
 .language .icon-nomask { width: 2.6em; height: 2.6em; margin: 0 auto .6em }
-.fastmenu { display:none}
-.fastmenu ul li{ text-align:center; padding:1em}
-.fastmenu ul li:hover,.fastmenu ul li:active{ background:#eee}
-.fastmenu ul li:first-child{ border-bottom:1px dashed #ccc;}
-.fastmenu ul:first-child li{ border-right:1px dashed #ccc}
-.fastmenu .icon-mask {font-size:4em; color: #888; margin: 0 auto .6em }
-.fastmenu ul li:hover .icon-mask ,.fastmenu ul li:active .icon-mask { color:#444}
+.fastmenu { display: none }
+.fastmenu ul li { text-align: center; padding: 1em }
+.fastmenu ul li:hover, .fastmenu ul li:active { background: #eee }
+.fastmenu ul li:first-child { border-bottom: 1px dashed #ccc; }
+.fastmenu ul:first-child li { border-right: 1px dashed #ccc }
+.fastmenu .icon-mask { font-size: 4em; color: #888; margin: 0 auto .1em }
+.fastmenu ul li:hover .icon-mask, .fastmenu ul li:active .icon-mask { color: #444 }
 /* PC ----------- */
-@media only screen and (min-width : 480px) {	
+@media only screen and (min-width : 480px) {
 .menu { display: -moz-box; display: -webkit-box; display: box }
 .menu.language li.selected { border-bottom-color: transparent; }
 .searchbox { display: -moz-box; display: -webkit-box; display: box }
 }
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones */
 @media only screen and (max-width : 480px) {
-.fastmenu { display:block}
+.fastmenu { display: block }
 .page { display: none; z-index: 10 }
 .menu .icon-mask { display: inline-block; margin: 0 .8em 0 0; vertical-align: text-bottom; }
 .page { position: absolute; width: 100%; }
@@ -215,4 +217,3 @@ header{ position:relative; z-index:10}
 .td-description { display: none }
 .searchbox .btnbox { margin-top: .4em }
 }
-
