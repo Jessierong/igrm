@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>iGRM</title>
@@ -22,24 +23,18 @@
 <body>
 <div class="wrapper">
 	<header>
-	<h1 class="flexbox sectiontitle">
-		<a class="icon-mask icon-th-menu" href="javascript:slideTogglePage()"></a>
-		<span class="flex1 padding10 textoverflow">iGRM for THE ETON HOTEL SHANGHAI</span>
-		<a class="icon-mask icon-earth" href="javascript:slideToggleLanguage()"></a>
-	</h1>
-	<section class="page">
-	<!-- InstanceBeginEditable name="menu" -->
+		<h1 class="flexbox sectiontitle"> <a class="icon-mask icon-th-menu" href="javascript:slideTogglePage()"></a> <span class="flex1 padding10 textoverflow">iGRM for THE ETON HOTEL SHANGHAI</span> <a class="icon-mask icon-earth" href="javascript:slideToggleLanguage()"></a> </h1>
+		<section class="page"> <!-- InstanceBeginEditable name="menu" -->
 			<ul class="menu">
-				<li class="selected"><a href="home.html"><i class="icon-mask icon-home"></i>Home</a></li>
+				<li><a href="home.html"><i class="icon-mask icon-home"></i>Home</a></li>
 				<li><a href="profile.html"><i class="icon-mask icon-user"></i>Profile</a></li>
 				<li><a href="reward.html"><i class="icon-mask icon-box-add"></i>Reward</a></li>
 				<li><a href="redemption.html"><i class="icon-mask icon-box-remove"></i>Redemption</a></li>
-				<li><a href="gift.html"><i class="icon-mask icon-gift"></i>Gift</a></li>
+				<li class="selected"><a href="gift.html"><i class="icon-mask icon-gift"></i>Gift</a></li>
 				<li><a href="password.html"><i class="icon-mask icon-locked"></i>Password</a></li>
 				<li><a href="index.html"><i class="icon-mask icon-power-off"></i>Logout</a></li>
 			</ul>
-			<!-- InstanceEndEditable -->
-	</section>
+			<!-- InstanceEndEditable --> </section>
 	</header>
 	<section class="language">
 		<ul class="menu">
@@ -51,54 +46,45 @@
 		</ul>
 	</section>
 	<div class="shadow-mobile"></div>
-	<section class="wrapper-mobile">
-		<!-- InstanceBeginEditable name="main" -->
-	<section id="allPart" class="margin20">
-		<div class="logo"><img src="images/logo.png"/></div>
-		<h2 class="dividetitle">Welcome.</h2>
-		<div class="flexbox marginb10">
-			<ul class="formdetail flex1">
+	<section class="wrapper-mobile"> <!-- InstanceBeginEditable name="main" -->
+		<section id="allPart" class="margin20">
+			<h2 class="dividetitle">Gift Gallery - Details</h2>
+			<div class="photobox boxshadow10 border4"> <img src="gifts/102.jpg" alt="FB02"> </div>
+			<ul class="formdetail marginb10">
 				<li>
-					<label>Name</label>
-					<span>Robert Patruno</span> </li>
+					<label for="Code">Code</label>
+					<span>FB02</span> </li>
 				<li>
-					<label>Card Number</label>
-					<span>600012</span> </li>
+					<label for="Name">Name</label>
+					<span>Cash Certificate for Drinks - RMB 100</span> </li>
+				<li>
+					<label for="Points">Points Required</label>
+					<span>1000</span> </li>
+				<li>
+					<label for="Description">Description</label>
+					<span>This drink certificate entitles a bearer to spend RMB 100 at E-Bar for beverages only.</span> </li>
+				<li>
+					<label for="Quantity">Enter Quantity</label>
+					<input name="name2" type="number" value="" size="20">
+				</li>
 			</ul>
-			<ul class="formdetail flex1">
-				<li>
-					<label>Current Balance</label>
-					<span>6885</span> </li>
-				<li>
-					<label>Level</label>
-					<span>Diamond</span> </li>
-			</ul>
-		</div>
-		<section class="fastmenu">
-		<h2 class="dividetitle">Quick Select</h2>
-		<div class="flexbox">
-		<ul class="flex1">
-			<li><a href="profile.html"><i class="icon-mask icon-user"></i>Profile</a></li>
-			<li><a href="reward.html"><i class="icon-mask icon-box-add"></i>Reward</a></li>
-		</ul>
-		<ul class="flex1">	
-			<li><a href="redemption.html"><i class="icon-mask icon-box-remove"></i>Redemption</a></li>
-			<li><a href="gift.html"><i class="icon-mask icon-gift"></i>Gift</a></li>
-		</ul>
-		</div>
+			<div class="btnbox">
+				<a href="#" class="button buttonActive border4"><i class="icon-mask icon-check"></i>Redeem</a>
+				<a href="gift.html" class="button buttonActive border4"><i class="icon-mask icon-times"></i>Cancel</a>
+			</div>
 		</section>
-	</section>
-	<!-- InstanceEndEditable -->
+		<!-- InstanceEndEditable -->
 		<footer>
 			<p>Copyright © 2014 <b>Next Generation Technologies</b><br />
 				All rights reserved. <a href="http://www.ngwt.com" title="Next Generation Technologies" target="_blank">www.ngwt.com </a></p>
 		</footer>
 	</section>
 </div>
-<script type="text/javascript" src="js/lib/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="js/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
-<script type="text/javascript" src="js/pickadate/source/pickadate.legacy.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script> 
+<script type="text/javascript" src="js/lib/jquery-1.8.2.min.js"></script> 
+<script type="text/javascript" src="js/icheck/jquery.icheck.min.js"></script> 
+<script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script> 
+<script type="text/javascript" src="js/pickadate/source/pickadate.legacy.min.js"></script> 
+<script type="text/javascript" src="js/script.js"></script>
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>

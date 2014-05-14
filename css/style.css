@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5 { font-family: Arial, "微软雅黑" }
 .formdetail input, .formdetail select, .formdetail textarea { vertical-align: middle; max-width: 100% }
 .checkgroup { margin-bottom: .4em }
 .checkgroup li { float: left; margin-right: .4em; min-width: 40% }
+.formdetail li span{max-width: 70%;display: inline-block;vertical-align: text-top;}
 }
 /* Smartphones */
 @media only screen and (max-width : 480px) {
@@ -199,14 +200,18 @@ header { position: relative; z-index: 10 }
 .fastmenu ul:first-child li { border-right: 1px dashed #ccc }
 .fastmenu .icon-mask { font-size: 4em; color: #888; margin: 0 auto .1em }
 .fastmenu ul li:hover .icon-mask, .fastmenu ul li:active .icon-mask { color: #444 }
+.photobox{ margin:0 auto .6em; padding:.3em; text-align:center}
 /* PC ----------- */
 @media only screen and (min-width : 480px) {
 .menu { display: -moz-box; display: -webkit-box; display: box }
 .menu.language li.selected { border-bottom-color: transparent; }
 .searchbox { display: -moz-box; display: -webkit-box; display: box }
+.photobox{ display:inline-block}
+.photobox img{ max-width:400px}
 }
 /* Smartphones */
 @media only screen and (max-width : 480px) {
+.photobox img{width:100%}
 .fastmenu { display: block }
 .page { display: none; z-index: 10 }
 .menu .icon-mask { display: inline-block; margin: 0 .8em 0 0; vertical-align: text-bottom; }
