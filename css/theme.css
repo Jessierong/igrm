@@ -9,6 +9,7 @@ a{color:#f90}
 .error { color: #C00 }
 .tip { color: #999 }
 /**/
+.loginphoto{ background:url(../images/Yuting_Restaurant.jpg) center; background-size:auto 100%;}
 .menu li.selected { border-bottom-color: #f60; }
 .sectiontitle { color: #fff; text-shadow: 1px 1px 0 rgba(0,0,0,.2); background: #f90; }
 .table th { background-color: #FFF5C2; }
