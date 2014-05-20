@@ -25,13 +25,13 @@ $(window).resize(function() {
 $(window).scroll(function() {
     //You've scrolled this much:
     var scrollHeight = $(window).scrollTop();
-    var hearderHeight = $("header").height();
+    var hearderHeight = $(".header").height();
     if (scrollHeight > hearderHeight) {
-        $("header").addClass("headfixed");
+        $(".header").addClass("headfixed");
         $("#allPart").css("padding-top", hearderHeight)
     } 
     else {
-        $("header").removeClass("headfixed");
+        $(".header").removeClass("headfixed");
         $("#allPart").css("padding-top", 0)
     }
 });
@@ -41,7 +41,7 @@ function tabselect() {
     $(".tabbox h2").click(function() {
         $(this).addClass("on").siblings().removeClass("on");
         var i = $(this).index();
-        $(".tabcontainer>section").hide().parent().children().eq(i).show();
+        $(".tabcontainer>div").hide().parent().children().eq(i).show();
     }
     );
 }

@@ -9,49 +9,47 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-<link rel="stylesheet" type="text/css" href="css/style-font.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/ngwt.css"/>
+<link rel="stylesheet" type="text/css" href="css/ngwt-high.css"/>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
-<link rel="stylesheet" type="text/css" media="handheld, screen and (-ms-high-contrast: active), (-ms-high-contrast: none)" href="css/style-ie.css"/>
 <link rel="stylesheet" type="text/css" href="css/theme.css"/>
 </head>
 <body>
 <div class="loginphoto">
 	<div class="wrapper-login">
-		<header>
+		<div class="header">
 			<h1 class="sectiontitle"> <span class="flex1 padding10 textoverflow">Member Login</span></h1>
-		</header>
-		<div class="shadow-mobile"></div>
-		<section class="wrapper-mobile">
-			<section id="allPart" class="margin20">
-				<div class="logo" style="margin-bottom:1em"><img src="images/logo.png" width="184" height="98"/><img src="images/igrm-logo.png" width="252" height="80" /></div>
-				<h2 class="dividetitle">Welcome to the iGRM System</h2>
-				<ul class="loginbox formdetail marginb10">
-					<li>
-						<label for="upwd_passwd">Member ID</label>
-						<input size="15" name="userid">
-						<span class="error">Error message</span> </li>
-					<li>
-						<label for="password">Password</label>
-						<input type="password" size="15" name="passwd" onunfocus="document.bn_login.submit()">
-						<span class="success">Success message</span> </li>
+		</div>
+		<div id="allPart" class="margin20">
+			<div class="logo" style="margin-bottom:1em"><img src="images/logo.png" width="184" height="98"/><img src="images/igrm-logo.png" width="252" height="80" /></div>
+			<h2 class="dividetitle">Welcome to the iGRM System</h2>
+			<ul class="loginbox formdetail marginb10">
+				<li>
+					<label for="upwd_passwd">Member ID</label>
+					<input size="15" name="userid">
+					<span class="error">Error message</span> </li>
+				<li>
+					<label for="password">Password</label>
+					<input type="password" size="15" name="passwd" onunfocus="document.bn_login.submit()">
+					<span class="success">Success message</span> </li>
+			</ul>
+			<div style="text-align:right"><a href="home.html" class="button buttonActive border4" name="loginbutton"><i class="icon-mask icon-key"></i>login</a></div>
+			<h2 class="dividetitle">Select Language</h2>
+			<div class="language-login">
+				<ul class="menu clearfix">
+					<li class="selected"><i class="icon-nomask icon-us"></i>English</li>
+					<li class="gray"><i class="icon-nomask icon-cn"></i>中文(简)</li>
+					<li class="gray"><i class="icon-nomask icon-hk"></i>中文(繁)</li>
+					<li class="gray"><i class="icon-nomask icon-jp"></i>日本語</li>
+					<li class="gray"><i class="icon-nomask icon-kr"></i>한국의</li>
 				</ul>
-				<div style="text-align:right"><a href="home.html" class="button buttonActive border4" name="loginbutton"><i class="icon-mask icon-key"></i>login</a></div>
-				<h2 class="dividetitle">Select Language</h2>
-				<section class="language-login">
-					<ul class="menu">
-						<li class="selected"><i class="icon-nomask icon-us"></i>English</li>
-						<li class="gray"><i class="icon-nomask icon-cn"></i>中文(简)</li>
-						<li class="gray"><i class="icon-nomask icon-hk"></i>中文(繁)</li>
-						<li class="gray"><i class="icon-nomask icon-jp"></i>日本語</li>
-						<li class="gray"><i class="icon-nomask icon-kr"></i>한국의</li>
-					</ul>
-				</section>
-			</section>
-			<footer>
-				<p>Copyright © 2014 <b>Next Generation Technologies</b><br />
-					All rights reserved. <a href="http://www.ngwt.com" title="Next Generation Technologies" target="_blank">www.ngwt.com </a></p>
-			</footer>
-		</section>
+			</div>
+		</div>
+		<div class="footer">
+			<p>Copyright © 2014 <b>Next Generation Technologies</b><br />
+				All rights reserved. <a href="http://www.ngwt.com" title="Next Generation Technologies" target="_blank">www.ngwt.com </a></p>
+		</div>
 	</div>
 </div>
 <script type="text/javascript" src="js/lib/jquery-1.8.2.min.js"></script> 
