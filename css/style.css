@@ -57,6 +57,9 @@
 .tabcontain2c > li { display: inline-block; float: left; width: 50% }
 .tabcontain2c > li:first-child { padding-right: 1em }
 @media only screen and (max-width : 480px) {/* Smartphones */
+.tabcontain2c > li:first-child { padding-right: 0 }
+}
+@media only screen and (max-width : 480px) {/* Smartphones */
 .tabcontain2c > li { display: block; float: none; width: auto }
 }
 .formdetail.flex1 { display: inline-block\0; width: 45%\0 }
